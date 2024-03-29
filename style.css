@@ -5,22 +5,22 @@ body{
     padding: 5%;
 }
 
-@keyframes tiltAnimation {
-    0% {
-        transform: rotateY(5deg);
-    }
-    100% {
-        transform: rotateY(-5deg);
-    }
-}
-
 a{
     display: flex;
     align-items: center;
     justify-content: center;
     transform-style: preserve-3d;
-    animation: tiltAnimation 8s infinite linear alternate;
+    animation: tiltAnimation 10s infinite linear alternate;
 }
+@keyframes tiltAnimation {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.99);
+    }
+}
+
 
 p{
     font-family: "Lexend";
@@ -41,17 +41,17 @@ p{
 }
 
 table {
-    /*border-collapse: collapse;*/
     width: 100%;
     border: none;
 }
 .tableb{
-    background-color: #efefef;
+    background-color: #C0C0C0;
 }
 
-td{
+td {
     border: 1px solid white;
-    padding: 5px;
+    border-radius: 7px;
+    padding: 7px; 
 }
 td.Name {
     text-align: right;
