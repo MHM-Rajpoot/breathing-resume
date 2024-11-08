@@ -2,15 +2,30 @@
 @import url(https://themes.googleusercontent.com/fonts/css?kit=PY67SA034LCAl0I08h9ecOlpazL13QRFnnvCryiMfuKwq0MjMvVNamKbZS78ards);
 
 body{
-    padding: 5%;
+    padding: 3%;
 }
 
 a{
+    color: black;
+    border: none;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 15px;
+    cursor: pointer;
+
+    text-decoration: none;
+
     display: flex;
     align-items: center;
     justify-content: center;
     transform-style: preserve-3d;
     animation: tiltAnimation 10s infinite linear alternate;
+}
+.a:hover{
+    color: #083BC9;
+    background-color: white;
 }
 @keyframes tiltAnimation {
     0%, 100% {
@@ -84,7 +99,7 @@ tr.Info{
 }
 
 img.Dp {
-    width: 33%;
+    width: 30%;
     max-width: 100%;
     height: auto;
 }
