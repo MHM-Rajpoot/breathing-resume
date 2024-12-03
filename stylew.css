@@ -24,7 +24,7 @@ a{
     animation: tiltAnimation 10s infinite linear alternate;
 }
 .a:hover{
-    color: #083BC9;
+    color: darkred;
     background-color: white;
 }
 @keyframes tiltAnimation {
